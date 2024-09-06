@@ -1,0 +1,472 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1078,12832" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="58">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="56">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1088,12767.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="cella" />
+      <Variable x:TypeArguments="x:Int32" Name="indice_riga" />
+      <Variable x:TypeArguments="x:Int32" Name="riga" />
+      <Variable x:TypeArguments="x:Int32" Name="contatore" />
+      <Variable x:TypeArguments="x:String" Name="tipologia" />
+      <Variable x:TypeArguments="x:Int32" Name="inizioriga" />
+      <Variable x:TypeArguments="s:String[]" Name="lista_titoli" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1026,12656.666666666666" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="992,12569.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="930,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[riga]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">199</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="930,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[lista_titoli]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[{"Bringing Online Egocentric Action Recognition into the wild", "Auction-Based Task Allocation and Motion Planning for Multi-RobotSystems with Human Supervision", "Graph learning in robotics: a survey", "Bayesian size-and-shape regression modelling.", "Machine Learning for Seismic Exploration: where are we and how far are we from the Holy Grail?", "Enhancing Explainability of Deep Learning Models for Urban Point Cloud Analysis: A Focus on Semantic Segmentatio", "A Structured Prediction Approach for Robot Imitation Learning", "GEO-AI: cos’è e come ci aiuta a comprendere i fenomeni naturali", "MECCANO: A Multimodal Egocentric Dataset for Humans Behavior Understanding in the Industrial-like Domain", "Streaming egocentric action anticipation: an evaluation scheme and approach", "Egocentric Action Anticipation from Untrimmed Videos", "MeT: A Graph Transformer for Semantic Segmentation of 3D Meshes", "Transformer-based image generation from scene graphs", "A deep-learning approach for online cell identification and trace extraction in functional two-photon calcium imaging", "ASTRA: a deep learning algorithm for fast semantic segmentation of large-scale astrocytic networks", "Darwin tra le macchine. L'intelligenza della tecnoscienza", "Transfer learning for atomistic simulations using GNNs and kernel mean embeddings.", "Bilevel Optimization with a Lower-level Contraction: Optimal Sample Complexity without Warm-Start", "Multi-task Representation Learning with Stochastic Linear Bandits", "Spiking neuron mathematical models: a compact overview", "Leveraging Commonsense for Object Localisation in Partial Scenes", "Anticipating Next Active Objects for Egocentric Videos", "SiteFerret: beyond simple pocket identification in proteins", "Selective Attention-based Modulation for Continual Learning", "Wake-Sleep Consolidated Learning", "Beyond spiking networks: the computational advantages of dendritic amplification and input segregation", "Runtime Construction of Large-Scale Spiking Neuronal Network Models on GPU Devices", "Virtual reality supports perspective taking in cultural heritage interpretation", "Experiments on real-life emotions challenge Ekman's model", "Interactive inference: a multi-agent model of cooperative joint actions", "Generating Meaning: Active Inference and the Scope and Limits of Passive AI", "Adaptive Robot Navigation through Integrated Task and Motion Planning", "Intrinsically Motivated High-Level Planning for Agent Exploration", "Assessing Adjustable Social Autonomy: An Experimental Study in Human-Robot Interaction", "A machine learning optimization approach for last-mile delivery and third-party logistics", "A Novel Transformer-Based IMU Self-Calibration Approach through On-Board RGB Camera for UAV Flight Stabilization", "A Semi-automatic Data Generator for Query Answering", "Adversarial Anomaly Explanation", "Anomaly detection with correlation laws", "ASP and subset minimality: enumeration, cautious reasoning and MUSes", "ASP-Based Declarative Reasoning in Data-Intensive Enterprise and IoT Applications", "Attention-based Multihead Deep Learning Framework for online activity monitoring with Smartwatch Sensors", "Audio Super-Resolution via Vision Transformer", "Comparative evaluation of strategies for improving the robustness of complex networks", "Complexity and scalability of defeasible reasoning in many-valued weighted knowledge bases - Extended Abstract", "Compliance checking on first-order knowledge with conflicting and compensatory norms: a comparison among currently available technologies", "Deep Learning Based Fusion Model for Multivariate LTE Traffic Forecasting and Optimized Radio Parameter Estimation", "Detecting Anomalies with LatentOut: Novel Scores, Architectures, and Settings", "DKSM: A Decentralized Kerberos Secure Service-Management Protocol for Internet of Things", "Dyadic Existential Rules", "Edge-cloud continuum solutions for urban mobility prediction and planning", "Efficient compliance checking of RDF data", "EnviroStream: A Stream Reasoning Benchmark for Environmental and Climate Monitoring", "Explainable acceptance in probabilistic and incomplete abstract argumentation frameworks", "Hashcash Tree, a Data Structure to Mitigate Denial-of-Service Attacks", "Human Sensing by Using Radio Frequency Signals: A Survey on Occupancy and Activity Detection", "Lexicon-based sentiment analysis to detect opinions and attitude towards COVID-19 vaccines on Twitter in Italy", "Machine Learning for Tsunami Waves Forecasting\\using Regression Trees", "Model aggregation techniques in federated learning: A comprehensive survey", "Multi-Density Crime Predictor: an approach to forecast criminal activities in multi-density crime hotspots", "On measuring inconsistency in definite and indefinite databases with denial constraints.", "Polynomial Combined First-Order Rewritings for Linear and Guarded Existential Rules", "Reconstruction Error-based Anomaly Detection with Few Outlying Examples", "Riflessioni sulla Intelligenza Artificiale (IA) sostitutiva: riflessioni su alcune attività nel settore legale", "SPARQL-QA-v2 system for Knowledge Base Question Answering", "Taking into account 'who said what' in abstract argumentation: Complexity results.", "Biases in Large Language Models: Origins, Inventory and Discussion", "Scalable and Cooperative Deep Reinforcement Learning Approaches for Multi-UAV Systems: A Systematic Review", "The notion of Abstraction in Ontology-based Data Management", "A Review of Data Abstraction", "Dense Hebbian neural networks: a replica symmetric picture of unsupervised learning", "Dense Hebbian neural networks: a replica symmetric picture of supervised learning", "Ultrametric identities in glassy models of Natural Evolution", "Inverse modelling of time-delayed interactions via the Dynamic Entropy formalism ​", "Parallel learning by Multitasking neural networks", "Random matching in 2D with exponent 2 for densities defined on unbounded sets", "Addressing ambiguity in randomized reinsurance stop-loss treaties using belief function", "Dynamic bid-ask pricing under Dempster-Shafer uncertainty", "A tool for declarative Trace Alignment via automated planning", "Nearest Neighbours Graph Variational AutoEncoder", "Convergent approaches to AI Explainability for HEP muonic particles pattern recognition", "Mimicking Behaviors in Separated Domains", "Data-Aware Declarative Process Mining with SAT", "Drop Edges and Adapt: a Fairness Enforcing Fine-tuning for Graph Neural Networks", "A Benchmark Study on Knowledge Graphs Enrichment and Pruning Methods in the Presence of Noisy Relationships", "A Supervised Approach for the Detection of AM-FM Signals' Cross-Terms in Spectrogram Images", "Supervised Feature Compression based on Counterfactual Analysis", "Global Optimization for Cardinality-constrained Minimum Sum-of-Squares Clustering via Semidefinite Programming", "A Feasibility-Driven MPC Scheme for Robust Gait Generation in Humanoids", "New coding scheme to compile circuits for Quantum Approximate Optimization Algorithm by genetic evolution", "Continual learning with invertible generative models", "Storage and Learning phase transitions in the Random-Features Hopfield Model", "Model-based control for soft robots with system uncertainties and input saturation", "Compositional Semantic Mix for Domain Adaptation in Point Cloud Segmentation", "Sparse Vicious Attacks on Graph Neural Networks", "Input decoupling of Lagrangian systems via coordinate transformation: General characterization and its application to soft robotics", "Unified inverse dynamics of modular serial mechanical systems with application to soft robotics", "L3DAS23: Learning 3D Audio Sources for Audio-Visual Extended Reality", "GROUSE: A Task and Model Agnostic WaveletDriven Framework for Medical Imaging", "A framework for modeling, executing, and monitoring hybrid multi-process specifications with bounded global–local memory", "Allocating Indivisible Goods to Strategic Agents: Pure Nash Equilibria and Fairness", "Interactive Neural Painting", "Discovering hybrid process models with bounds on time and complexity: When to be formal and when not?", "Edge Guided GANs with Multi-Scale Contrastive Learning for Semantic Image Synthesis", "Cloth Interactive Transformer for Virtual Try-On", "Computing unsatisfiable cores for LTLf specifications", "Style-Hallucinated Dual Consistency Learning: A Unified Framework for Visual Domain Generalization", "Assessment of the E3C corpus for the recognition of disorders in clinical texts", "Energy Efficient Multi-Robot Task Allocation Constrained by Time Window and Precedence", "Verification modulo theories", "XimSwap: Many-to-Many Face Swapping for TinyML", "Enhancing SMT-based Weighted Model Integration by Structure Awareness.", "On Enumerating Short Projected Models", "Trajectory Test-train Overlap in Next-location Prediction", "Graph Neural Networks for Temporal Graphs: State of the Art, Open Challenges and Opportunities", "Humans as path-finders for mobile robots using teach-by-showing navigation", "Humanising Robot-Assisted Navigation", "Direct Speech Translation for Automatic Subtitling", "Good, but not always Fair: An Evaluation of Gender Bias for three commercial Machine Translation Systems", "CoVEffect: Interactive Deep Learning-based SARS-CoV-2 Mutations and Variants Effect Extraction", "VariantHunter: a method and tool for fast detection of emerging", "PoliViews: A comprehensive and modular approach to the conceptual modeling of genomic data", "Efficient approximation of cardiac mechanics through reduced order modeling with deep learning-based operator approximation", "Quantum approximate optimization algorithm applied to the binary perceptron", "Error estimates for POD-DL-ROMs: a deep learning framework for reduced order modeling of nonlinear parametrized PDEs enhanced by proper orthogonal decomposition", "Uncertainty quantification for nonlinear solid mechanics using reduced order models with Gaussian process regression", "Long-time prediction of nonlinear parametrized dynamical systems by deep learning-based reduced order models", "Deep Learning-based surrogate models for parametrized PDEs: handling geometric variability through graph neural networks", "Nonlinear model order reduction for problems with microstructure using mesh informed neural networks", "Multi-fidelity reduced-order surrogate modeling", "A digital twin framework for civil engineering structures", "Typical and atypical solutions in nonconvex neural networks with discrete and continuous weights", "ARLO: A framework for Automated Reinforcement Learning", "A Deep Learning algorithm to accelerate Algebraic Multigrid methods in Finite Element solvers of 3D elliptic PDEs", "Latent Dynamics Networks (LDNets): learning the intrinsic dynamics of spatio-temporal processes", "Evolving Fuzzy Prediction Intervals in Nonstationary Environments ", "Modeling the periodic response of Micro-Electromechanical Systems through deep learning-based approaches", "Multimodal Batch-wise Change Detection", " Designing Menus of Contracts Efficiently: The Power of Randomization 2023", "Public Bayesian Persuasion: Being Almost Optimal and Almost Persuasive", "Increasing Revenue in Bayesian Posted Price Auctions through Signaling", "Computer simulations and surrogative reasoning for the design of new robots", "Keep trusting! A plea for the notion of Trustworthy AI", "Probabilistic feasibility in data-driven multi-agent non-convex optimization", "'IWDA: Importance Weighting For Drift Adaptation In Streaming Supervised Learning Problems'", "Real-time whole-heart electromechanical simulations using Latent Neural Ordinary Differential Equations", "Challenges in AI-supported process analysis in the Italian judicial system: what after digitalization?", "Challenges of a Data Ecosystem for Scientific Data", "'TyBox: an automatic code generation toolbox For TinyML incremental On-device learning.'", "Matrix factorization with neural networks", "Scaling survival analysis in healthcare with federated survival forests: A comparative study on heart failure and breast cancer genomics", "Extracting a functional representation from a dictionary for non-rigid shape matching", "Co-designing the Integration of Voice-based Conversational AI and Web Augmentation to Amplify Web Inclusivity", "Using Socially Assistive Robots in Speech-Language Therapy for Children with Language Impairments", "Multi-Task Attentive Residual Networks for Argument Mining", "An Investigation about Modern Deep Learning Strategies for Colon Carcinoma Grading", "PDAtt-Unet: Pyramid Dual-Decoder Attention Unet for Covid-19 infection segmentation from CT-scans", "Generative negative replay for continual learning", "Virtual Reality supports perspective taking in cultural heritage interpretation", "Disruptive Situation Detection on Public Transport through Speech Emotion Recognition", "Combining Compressed Sensing and Neural Architecture Search for Sensor-near Vibration Diagnostics", "Vibration Monitoring in the Compressed Domain with Energy-Efficient Sensor Networks", "Speeding up System Identification Algorithms on a Parallel RISC-V MCU for Fast Near-Sensor Vibration Diagnostic", "Tiny Deep Learning Architectures Enabling Sensor-Near Acoustic Data Processing and Defect Localization", "Educational transformations with artificial intelligence: a critical exploration of impacts on teaching, learning, and educational design in the age of algorithms,", "Representation of learning in the post-digital: students’ dropout predictive models with artificial intelligence algorithms", "Effect of data harmonization of multicentric dataset in ASD / TD classification", "Deep Learning based Joint Fusion approach to exploit anatomical and functional brain information in Autism Spectrum Disorders", "Tackling the small data problem in medical image classification with artificial intelligence : a systematic review", "Optical fibres with memory effects and their quantum communication capacities", "Classical shadows meet quantum optimal mass transport", "Deep Learning for Head Pose Estimation: A survey", "Image embedding for denoising generative models", "Portrait Reification with Generative Diffusion Models", "Computer Vision Tasks for Ambient Intelligence in Children's Health", "Symbolic Knowledge Extraction and Injection with Sub-symbolic Predictors: a Systematic Literature Review", "Peer-Reviewed Federated Learning", "Measuring Trustworthiness in Neuro-Symbolic Integration", "Extending OpenStack Monasca for Predictive Elasticity Control", "Co-design of human-centered, explainable AI for clinical decision support", "Continual Adaptation of Federated Reservoirs in Pervasive Environments", "Measuring Fairness Under Unawareness of Sensitive Attributes: A Quantification-Based Approach", "AI technologies in auditing: a paradoxical tension analysis", "Concept-wise granular computing for explainable artificial intelligence", "Understanding Any Time Series Classifier with a Subsequence-based Explainer", "The Situated Mind and the Space of Reasons: On the Match and Mismatch between Pragmatism and Phenomenology", "The future of ethics in AI: challenges and opportunities", "Predictive optimisation systems do not work, and they infringe rights. so why do we use them?", "Modelling Heavy Tailed Phenomena Using a LogNormal Distribution Having a Numerically Verifiable Infinite Variance", "Improving trust and confidence in medical skin lesion diagnosis through explainable deep learning", "Improving Emotion Recognition Systems by Exploiting the Spatial Information of EEG Sensors", "Generalized Funnelling: Ensemble Learning and Heterogeneous Document Embeddings for Cross-Lingual Text Classification", "From local counterfactuals to global feature importance: efficient, robust, and model-agnostic explanations for brain connectivity networks", "Enabling federated learning of explainable AI models within beyond-5G/6G networks", "Fair Federated Learning methodology based on Multi-Objective Optimization", "Evaluating the Privacy Exposure of Interpretable Global and Local Explainers", "OpenFL-XAI: Federated learning of explainable artificial intelligence models in Python", "Value co-creation via machine learning from a configuration theory perspective", "Understanding natural language understanding systems", "Multi-Label Quantification", "Same or Different? Diff-Vectors for Authorship Analysis", "Addressing heterophily in node classification with graph echo state networks", "Data Platform Guidelines and Prototype for Microgrids and Energy Access: Matching Demand Profiles and Socio-Economic Data to Foster Project Development", "FlashSim prototype: an end-to-end fast simulation using Normalizing Flow", "Social search: Retrieving information in Online Social platforms – A survey", "Slow Big Data: exploring the nexus between urban mobility and heritage through GeoAI.", "Artificial Intelligence and new visions of the city: assemblages, imaginaries, policies.", "La comunicazione medico-paziente nel contesto della telemedicina. Alcuni aspetti etici", "Increasing trust in AI through Privacy Preservation and Model Explainability: Federated Learning of Fuzzy Regression Trees", "Autonomic Regulation of Facial Temperature during Stress: A Cross-Mapping Analysis", "Neuronal correlates of eyeblinks are an expression of primary consciousness phenomena", "EEG cortical activity and connectivity correlates of early sympathetic response during cold pressor test", "Dynamics of Opinion Polarization", "An Optimal Algorithm for Finding Champions in Tournament Graphs", "Generative AI models should include detection mechanisms as a condition for public release", "SCOUT: Security by computing OUTliers on activity logs", "FL-FD: Federated learning-based fall detection with multimodal data fusion", "The Impact of Adversarial Attacks on Interpretable Semantic Segmentation in Cyber–Physical Systems", "A Federated Learning-Inspired Evolutionary Algorithm: Application to Glucose Prediction", "Model-Free-Communication Federated Learning: Framework and application to Precision Medicine", "Trustworthy artificial intelligence classification-based equivalent bandwidth control", "Multi-task learning for few-shot biomedical relation extraction", "Few-shot Named Entity Recognition: Definition, Taxonomy and Research Directions", "TaughtNet: Learning Multi-Task Biomedical Named Entity Recognition From Single-Task Teachers", "Multi-objective optimization determines when, which and how to fuse deep networks: An application to predict COVID-19 outcomes", "RadioPathomics: Multimodal Learning in Non-Small Cell Lung Cancer for Adaptive Radiotherapy", "Quantum Transfer Learning for Acceptability Judgements", "Generating a novel synthetic dataset for rehabilitation exercises using pose-guided conditioned diffusion models: a quantitative and qualitative evaluation", "The Challenge of the Virtual World for Independent Authorities", "Too many rules or zero rules for the ChatGPT?", "Poteri datoriali e dati biometrici nel contesto dell’AI Act", "A new scaling method for robot learning by demonstration and application to the agricultural domain", "Robot learning by demonstration with dynamic parameterization of the orientation: an application to agricultural activities", "A low-cost multispectral device for in-field fruit ripening assessment", "Bilateral trade: A regret minimization perspective", "FedER: Federated Learning through Experience Replay and privacy-preserving data synthesis", "Physics-informed Neural Network for Quadrotor Dynamical Modeling", "Learning Rhythmic Trajectories with Geometric Constraints for Laser-Based Skincare Procedures", "Key Design Choices in Source-Free Unsupervised Domain Adaptation: An In-depth Empirical Analysis", "Effective Prime Factorization via Quantum Annealing by Modular Locally-structured Embedding.", "Comprehension, Apprehension, and Acceptance: Understanding the Influence of Literacy and Anxiety on Acceptance of Artificial Intelligence ", "A Human-AI Interaction Paradigm and its Application to Rhinocytology", "Guiding the generation of counterfactual explanations through temporal background knowledge for Predictive Process Monitoring", "Robust solutions via optimisation and predictive process monitoring for the scheduling of the interventional radiology procedures", "EFNN-Nul0- A trustworthy Knowledge extraction about stress identification through evolving fuzzy neural networks.", "Simplifying open-set video domain adaptation with contrastive learning", "Stochastically ordered aggregation operators", "Stochastic ordering of variability measure estimators", "Generalized Gini’s mean difference through distortions and copulas, and related minimizing problems", "Succinctness issues for LTLf and safety and cosafety fragments of LTL", "Temporal clustering of social interactions trades-off disease spreading and knowledge diffusion", "Generating Fine-grained Surrogate Temporal Networks", "Personalized Algorithmic Recourse with Preference Elicitation", "Feasibility of proton dosimetry overriding planning CT with daily CBCT elaborated through generative artificial intelligence tools", "Mixed Reality and Artificial Intelligence: a Holistic Approach to Multimodal Visualization and Extended Interaction in Knee Osteotomy", "Combined Edge Loss UNet for Optimized Segmentation in Total Knee Arthroplasty Preoperative Planning", "Temperature Modulation of MOS Sensors for Enhanced Detection of Volatile Organic Compounds", "SLEEP-SEE-THROUGH: Explainable Deep Learning for Sleep Event Detection and Quantification From Wearable Somnography", "Large Language Models in Healthcare: from a Systematic Review on Medical Examinations to a Comparative Analysis on Fundamentals of Robotic Surgery Online Test", "Main challenges on the curation of large scale datasets for pancreas segmentation using deep learning in multi-phase CT scans: focus on cardinality, manual refinement, and annotation quality", "Robots as Mental Well-being Coaches: Design and Ethical Recommendations", " A Primer on Seq2Seq Models for Generative Chatbots", "Optimizing Empty Container Repositioning and Fleet Deployment via Configurable Semi-POMDPs", "Trained quantum neural networks are Gaussian processes", "Sensitivity Analysis by Differential Importance Measure for Unsupervised Fault Diagnostics", "A Tiny Transformer-Based Anomaly Detection Framework for IoT Solutions", "Scheduling Inputs in Early Exit Neural Networks", "Towards eXplainable Data-Driven Control (XDDC): the property-preserving framework", "Exponential Capacity of Dense Associative Memories", "Alternate Training of Shared and Task-Specific Parameters for Multi-Task Neural Networks", "Graph-Informed Neural Networks for Sparse Grid-Based Discontinuity Detectors", "Lifted Action Models Learning from Partial Traces", "Planning and Learning to Perceive in Partially Unknown Environments", "Can AI deliver advice that is judgement-free for science policy?", "Digital technologies for step counting: between promises of reliability and risks of reductionism", "How to move beyond epistemic battles: Pluralism and contextualism at the science-society interface", "DeLTA-BIT: an open-source probabilistic tractography-based deep learning framework for thalamic targeting in functional neurological disorders", "Investigation of a potential upstream harmonization based on image appearance matching to improve radiomics features robustness: a phantom study", "Reduced order modeling of parametrized systems through autoencoders and SINDy approach: continuation of periodic solutions.", "OIE4PA: open information extraction for the public administration", "AI-based decision support system for public procurement", "ClayRS: An end-to-end framework for reproducible knowledge-aware recommender systems", "Harnessing distributional semantics to build context-aware justifications for recommender systems", "Multi-view overlapping clustering for the identification of the subject matter of legal judgments", "HURI: Hybrid user risk identification in social networks", "Forecasting and what-if analysis of new positive COVID-19 cases during the first three waves in Italy", "DARWIN: An online deep learning approach to handle concept drifts in predictive process monitoring", "SILVIA: An eXplainable Framework to Map Bark Beetle Infestation in Sentinel-2 Images", "Impact of Data Quality for Automatic Issue Classification Using Pre-trained Language Models", "ASBiNE: Dynamic Bipartite Network Embedding for Incorporating Structural and Attribute Information.", "An AI framework to support decisions on GDPR compliance", "PANACEA: A Neural Model Ensemble for Cyber-Threat Detection", "JARVIS: Joining Adversarial Training With Vision Transformers in Next-Activity Prediction", "TSUNAMI - an explainable PPM approach for customer churn prediction in evolving retail data environments", "L'origine dell'io. Il 'mistero' dell'intelligenza da Darwin al riduzionismo contemporaneo", "A Hybrid Protection Scheme for the Gait Analysis in Early Dementia Recognition", "Automated detection of Alzheimer’s disease: a multi-modal approach with 3D MRI and amyloid PET", "'Tell Me Why': using natural language justifications in a recipe recommender system to support healthier food choices", "Training Future Machine Learning Engineers: A Project-Based Course on MLOps", "Machine Learning and Knowledge Graphs: Existing Gaps and Future Research ", "Geometric deep learning for statics-aware grid shells", "Convolutional Neural Networks in the Diagnosis of Colon Adenocarcinoma", "Fully-attentive iterative networks for region-based controllable image and video captioning", "Generating More Pertinent Captions by Leveraging Semantics and Style on Multi-Source Datasets", "Agent-Designed Contracts: How to Sell Hidden Actions.", " Matrix factorization with neural networks", " The Exponential Capacity of Dense Associative Memories", " Generative diffusion in very large dimensions", " The Decimation Scheme for Symmetric Matrix Factorization", " Eigenvector Dreaming", " Spin glass theory and its new challenge: structured disorder", " Dynamical Regimes of Diffusion Models", " Change-point detection in dynamic Gaussian graphical models: the impact of COVID-19 pandemic on US stock market", "Entropy regularization in probabilistic clustering", "Nonparametric priors with full-range borrowing of information", "Clustering consistency with Dirichlet process mixtures", " Smoothing distributions for conditional Fleming-Viot and Dawson-Watanabe diffusions", "Conditional partial exchangeability: a probabilistic framework for multi-view clustering.", "Robustness and reproducibility for AI learning in biomedical sciences: RENOIR.", "A machine learning and directed network optimization approach to uncover TP53 regulatory patterns.", "MAGNETO: Cell type marker panel generator from single-cell transcriptomic data.", "Deep Learning methodologies for action segmentation applied to manufacturing scenarios (under review)", "Di cosa parliamo quando parliamo di costituzionalismo digitale", "The quadrangular shape of the geometry of digital power(s) and the move towards a procedural digital constitutionalism", "Generative AI. A concise primer for non experts", "Intelligenza urbana e tutela dei diritti fondamentali. Antinomia o complementarità nella nuova stagione algoritmica?", "Structure of the space of folding protein sequences defined by large language models", "FairBelief-Assessing Harmful Beliefs in Language Models", "A Tale of Pronouns: Interpretability Informs Gender Bias Mitigation for Fairer Instruction-Tuned Machine Translation", "Weigh Your Own Words: Improving Hate Speech Counter Narrative Generation via Attention Regularization", "Leveraging Label Variation in Large Language Models for Zero-Shot Text Classification", "Artificial Cognition vs. Artificial Intelligence for Next-Generation Autonomous Robotic Agents", "RESPRECT: Speeding-up Multi-fingered Grasping with Residual Reinforcement Learning", "A modular and adaptable analysis pipeline to compare slow cerebral rhythms across heterogeneous datasets", "Exploiting Multimodal Synthetic Data for Egocentric Human-Object Interaction Detection in an Industrial Scenario", "LCM: A Novel Characteristics-Based Least Common Multiple Clustering Algorithm to Enhance Magnetic Field-Based Indoor Localization", "An Intelligent Hierarchical Cyber-Physical System for beach waste management: the BIOBLU case study", "Stability and Safety Learning Methods for Legged Robots", "A Data-Driven Model Predictive Control for Quadruped Robot Steering on Slippery Surfaces", "Chi è 'chi'. Tra Kalka e l'intelligenza artificiale", "'Grounding End-to-End Pre-Trained Architectures for Semantic Role Labeling in Multiple Languages'", "Special Issue on Quality Aspects of Data Preparation", "Separability and its Approximations in Ontology-based Data Management", "Controlled Query Evaluation in Description Logics through Consistent Query Answering", "A Gentle Introduction to Controlled Query Evaluation in DL-Lite Ontologies", "Hebbian dreaming for small datasets ​", "Regularization, early-stopping and dreaming: a Hopfield-like setup to address generalization and overfitting", "Ontology-based Data Preparation in Healthcare: the Case of the AMD-STITCH Project", "The human in the loop: perspectives and challenges for RoboCup 2050", "Optimization meets Machine Learning: An Exact Algorithm for Semi-Supervised Support Vector Machines", "Demystifying the Hypercomplex: Inductive Biases in Hypercomplex Deep Learning", "A spectral approach to Hebbian neural networks", "Retrieving genuine nonlinear Raman responses in ultrafast spectroscopy via deep learning", "Optimizing accuracy and diversity: a multi-task approach to forecast combination", "Predicting Transcription Factor Binding Sites using Transformer based Capsule Network", "The impact of ambiguity on dynamic portfolio selection in the epsilon-contaminated binomial market model", "Indistinguishability in Controlled Query Evaluation over Prioritized Description Logic Ontologies", "Market consistent bid-ask option pricing under Dempster-Shafer uncertainty", "Enhancing Cooperativity in Controlled Query Evaluation over Ontologies", "ASPen: ASP-based Collective Entity Resolution", "Sentimental and spatial analysis of COVID-19 vaccines tweets", "Vaccine sentiment analysis using BERT + NBSVM and geo-spatial approaches", "Classifying Deceptive Reviews for the Cultural Heritage Domain: a Lexicon-based Approach for the Italian Language", "Exploring Research Trends in Modern Machine Learning Through a Statistical Mechanics Lens: An Ising-Inspired Modeling Perspective", "A multi-task network for speaker and command recognition in industrial environments", "Enhancing Autonomous Driving Decision-Making using Knowledge Graph Representation and Distillation Techniques", "Ontology Integration for Enhanced Knowledge Graphs in Autonomous Driving: Bridging Real-world and Simulated Environments", "A Unified Framework for Efficient Cell Graph Representation", "A Semantic Approach for Cultural Heritage Ontology Matching and Integration based on Textual and Multimedia Information", "Using Knowledge Graphs for Audio Retrieval: A Case Study on Copyright Infringement Detection", "A Critical Review and Systematic Design Approach for Linkage-Based Gait Rehabilitation Devices", "A logic-based framework for characterizing nexus of similarity within knowledge bases", "A meta-active learning approach exploiting instance importance", "A preferential interpretation of MultiLayer Perceptrons in a conditional logic with typicality", "A survey of the recent trends in deep learning for literature based discovery in the biomedical domain", "Block size estimation for data partitioning in HPC applications using machine learning techniques", "CNL2ASP: converting controlled natural language sentences into ASP", "Data- &amp; compute-efficient deviance mining via active learning and fast ensembles", "Deep learning meets smart agriculture: using LSTM networks to handle anomalous and missing sensor data in the compute continuum", "Design and Analysis of VARONE a Novel Passive Upper-Limb Exercising Device", "Detecting mental disorder on social media: a ChatGPT-augmented explainable approach", "Distilled Gradual Pruning with Pruned Fine-tuning", "Drivers of social influence in the Twitter migration to Mastodon", "Efficiently Approaching Vertical Federated Learning by Combining Data Reduction and Conditional Computation Techniques.", "Enhancing anomaly detectors with LatentOut", "Interpretable and Fast Outcome Prediction Leveraging Sparse Mixtures of Shallow Linear Experts.", "On effectively and efficiently training fake-news classifiers via Transfer and Active Learning", "Unmasking Deception: A Topic-Oriented Multimodal Approach to Uncover False Information on Social Media", "KERMIT: Knowledge-EmpoweRed Model In harmful meme deTection", "Nuova tecnica per nuove diseguaglianze. Case law: Disciplina Telecomunicazioni, Digital Services Act e Neurodiritti", "Potere giudiziario e intelligenza artificiale: un equilibrio mutevole", "Obblighi di informazione collettiva e sistemi integralmente automatizzati: antisindacalità della condotta omissiva e della comunicazione sufficiente", "I diritti di informazione nel d.lgs. N. 104/2022. Un ponte oltre la trasparenza", "Obbligo informativo e sistemi integralmente automatizzati", "Note intorno al (futuro) Artificial Intelligence Act. Prospettive costituzionali e le sfide dell’immigrazione nell’ecosistema digitale", "Realistic Fingerprint Presentation Attacks Based on an Adversarial Approach", "Multi input–Multi output 3D CNN for dementia severity assessment with incomplete multimodal data", "When (a lot of) data make clustering privacy preserving", "A Cascade of Learners for Firemen’ Emergency Events Classification", "Translating Image XAI to Multivariate Time Series", "Biomechanical and physiological effects of passive upper limb exoskeletons in manufacturing", "A new DMP scaling method for robot learning by demonstration and application to the agricultural domain"}]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="930,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[inizioriga]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">420</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="930,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[contatore]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">0</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="930,11957.333333333334" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Enumerable.Range(2,riga)]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="indice_riga" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="896,11767.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="854,11680" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Spoke5-publications.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="820,11399.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;D&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="758,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_2">
+                              <ueab:ReadCellValueX.SaveTo>
+                                <OutArgument x:TypeArguments="x:String">[tipologia]</OutArgument>
+                              </ueab:ReadCellValueX.SaveTo>
+                            </ueab:ReadCellValueX>
+                            <If Condition="[tipologia=&quot;Journal&quot;]" sap:VirtualizedContainerService.HintSize="758,11084" sap2010:WorkflowViewState.IdRef="If_2">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="724,10900" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="Title" />
+                                    <Variable x:TypeArguments="x:String" Name="giornale" />
+                                    <Variable x:TypeArguments="x:String" Name="Year" />
+                                    <Variable x:TypeArguments="x:String" Name="DOI" />
+                                    <Variable x:TypeArguments="x:String" Name="Link_paper" />
+                                    <Variable x:TypeArguments="x:String" Name="WP" />
+                                    <Variable x:TypeArguments="x:String" Name="TP" />
+                                    <Variable x:TypeArguments="x:String" Name="N_authors" />
+                                    <Variable x:TypeArguments="x:String" Name="Num_new" />
+                                    <Variable x:TypeArguments="x:String" Name="Other_WP" />
+                                    <Variable x:TypeArguments="x:String" Name="Other_Spoke" />
+                                    <Variable x:TypeArguments="x:String" Name="Author_other_WP" />
+                                    <Variable x:TypeArguments="x:String" Name="Authors_other_Spokes" />
+                                    <Variable x:TypeArguments="x:String" Name="Authors_other_affiliation" />
+                                    <Variable x:TypeArguments="x:String" Name="Authors_foreign_affiliation" />
+                                    <Variable x:TypeArguments="x:String" Name="Industrial_coauthors" />
+                                    <Variable x:TypeArguments="x:String" Name="Topic" />
+                                    <Variable x:TypeArguments="x:String" Name="Multidisciplinary" />
+                                    <Variable x:TypeArguments="x:String" Name="Critical_mass" />
+                                    <Variable x:TypeArguments="x:String" Name="Acknowledgement" />
+                                    <Variable x:TypeArguments="x:String" Name="CurrentStatus" />
+                                    <Variable x:TypeArguments="x:String" Name="Awards" />
+                                    <Variable x:TypeArguments="x:String" Name="Note" />
+                                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                                    <Variable x:TypeArguments="x:String" Name="Rank" />
+                                    <Variable x:TypeArguments="x:String" Name="Al_venue" />
+                                    <Variable x:TypeArguments="x:String" Name="Status" />
+                                    <Variable x:TypeArguments="x:String" Name="variable2" />
+                                    <Variable x:TypeArguments="x:String" Name="No_title" />
+                                    <Variable x:TypeArguments="x:String" Name="FAIR" />
+                                    <Variable x:TypeArguments="x:String" Name="All" />
+                                    <Variable x:TypeArguments="x:String" Name="Affiliation" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;A&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_3">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[cella]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;C&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_4">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Title]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;B&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_5">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Affiliation]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;E&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_6">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[giornale]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;F&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_7">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Year]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;G&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_8">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[DOI]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;H&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_9">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Link_paper]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;I&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_10">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[WP]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;J&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_11">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[TP]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;K&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_12">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[N_authors]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;L&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_13">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Num_new]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;M2&quot;)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_14">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Other_WP]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;N&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_15">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Other_Spoke]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;O&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_16">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Author_other_WP]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;P&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_17">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Authors_other_Spokes]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;Q&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_18">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Authors_other_affiliation]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;R2&quot;)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_19">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Authors_foreign_affiliation]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;S&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_20">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Industrial_coauthors]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;T&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_21">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Topic]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;U&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="False" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_22">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Multidisciplinary]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;V&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_23">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Critical_mass]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;W&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_24">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Acknowledgement]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;X&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_25">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[CurrentStatus]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;Y&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_26">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Awards]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;Z&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_27">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Note]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;AA&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_28">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Rank]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;AB&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_29">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Al_venue]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;AD&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_30">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[Status]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;AE&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_31">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[No_title]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;AF&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_32">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[All]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;papers&quot;).Cell(&quot;AG&quot;+indice_riga.ToString)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="682,164.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_33">
+                                    <ueab:ReadCellValueX.SaveTo>
+                                      <OutArgument x:TypeArguments="x:String">[FAIR]</OutArgument>
+                                    </ueab:ReadCellValueX.SaveTo>
+                                  </ueab:ReadCellValueX>
+                                  <If Condition="[Not lista_titoli.Contains(Title)]" sap:VirtualizedContainerService.HintSize="682,4468" sap2010:WorkflowViewState.IdRef="If_5">
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="648,4284" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If Condition="[CurrentStatus=&quot;Published&quot;]" sap:VirtualizedContainerService.HintSize="606,4196.666666666667" sap2010:WorkflowViewState.IdRef="If_4">
+                                          <If.Then>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="572,4012.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,3800.6666666666665" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="PE13 - Data for KPI.xlsx">
+                                                <ueab:ExcelApplicationCard.Body>
+                                                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,3520" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;A&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_21" Value="[inizioriga+contatore]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;B&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[cella]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;E&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[Title]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;C&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[Affiliation]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;F&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[giornale]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;I&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[Year]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;J&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[DOI]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;K&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[Link_paper]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;L&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[TP]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;M&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[Authors_other_Spokes]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;N&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_12" Value="[Authors_foreign_affiliation]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;O&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_13" Value="[Industrial_coauthors]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;P&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_14" Value="[Topic]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;Q&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_15" Value="[Multidisciplinary]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;G&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_17" Value="[Rank]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;S&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_20" Value="[CurrentStatus]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Publishing&quot;).Cell(&quot;H&quot;+(inizioriga+contatore).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_18" Value="[5]" />
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </ueab:ExcelApplicationCard.Body>
+                                              </ueab:ExcelApplicationCard>
+                                              <Assign sap:VirtualizedContainerService.HintSize="530,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Int32">[contatore]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Int32">[contatore+1]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_13" />
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_15" />
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
